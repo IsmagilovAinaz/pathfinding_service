@@ -1,0 +1,9 @@
+services:
+  path_finding:
+    build: .
+    ports:
+      - "${APP_PORT}:${APP_PORT}"
+    environment:
+      - APP_PORT=${APP_PORT}
+    env_file:
+      - .env
